@@ -1,0 +1,115 @@
+h1.page-title {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #333;
+    font-weight: normal;
+}
+
+.button-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.add-form-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5e63ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.add-form-button:hover {
+    background-color: #0056b3;
+}
+
+.card-decoration {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin: 10px;
+    border-radius: 8px;        
+    margin-left:2%;
+    width: 25%;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #acaefc;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-decoration:hover .card {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    color:#5e63ff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color:black;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.card strong {
+    color:#5e63ff;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#cardbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: left;
+}
+
+@media (min-width: 1921px) {
+    .card-decoration {
+        width: 40%;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 1920px) and (min-width: 1281px) {
+    .card-decoration {
+        width: 45%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1280px) and (min-width: 1025px) {
+    .card-decoration {
+        width: 55%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 801px) {
+    .card-decoration {
+        width: 65%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 800px) and (min-width: 481px) {
+    .card-decoration {
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-decoration {
+        width: 90%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,164 @@
+/* Estilo padrão para telas maiores */
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 23%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #acaefc;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h5 {
+    font-size: 1.2em;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.card .value {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #444;
+}
+
+.card p {
+    color: black;
+    font-size: 1em;
+}
+
+.date-time {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.date-time .date {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.date-time .time {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #444;
+}
+
+.bg-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.bg-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.bg-info {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.bg-warning {
+    background-color: #ffc107;
+    color: white;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    /* Ajusta o contêiner */
+    .container {
+        width: 90%;
+    }
+
+    /* Ajuste do título */
+    h1 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    /* Coloca as cards em uma única coluna */
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Ajuste de tamanho das cards */
+    .card {
+        width: 80%; /* Reduz a largura das cards para ocupar mais a tela */
+        margin-bottom: 20px;
+    }
+
+    /* Ajuste do tamanho das fontes para os elementos dentro das cards */
+    .card h5 {
+        font-size: 1em;
+    }
+
+    .card .value {
+        font-size: 2em;
+    }
+
+    .card p {
+        font-size: 0.9em;
+    }
+
+    /* Ajusta o tamanho da data e hora */
+    .date-time .date,
+    .date-time .time {
+        font-size: 1.2em;
+    }
+}
+
+/* Responsividade para telas muito pequenas (celulares mais estreitos) */
+@media (max-width: 480px) {
+    /* Ajuste do título */
+    h1 {
+        font-size: 1.2em;
+        margin-bottom: 15px;
+    }
+
+    /* Ajuste das cards */
+    .card {
+        width: 90%; /* Ocupa quase toda a tela */
+        padding: 15px;
+    }
+
+    .card h5 {
+        font-size: 0.9em;
+    }
+
+    .card .value {
+        font-size: 1.8em;
+    }
+
+    .card p {
+        font-size: 0.8em;
+    }
+
+    .date-time .date,
+    .date-time .time {
+        font-size: 1em;
+    }
+}
